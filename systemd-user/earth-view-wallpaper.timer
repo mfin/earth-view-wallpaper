@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs earth-view-wallpaper service every hour
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1h
+Unit=earth-view-wallpaper.service
+
+[Install]
+WantedBy=default.target

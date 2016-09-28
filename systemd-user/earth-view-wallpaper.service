@@ -1,0 +1,7 @@
+[Unit]
+Description=Retrieve a wallpaper from Google's Earth View
+
+[Service]
+Type=simple
+WorkingDirectory=/home/%u/.earth-view-wallpaper/
+ExecStart=/usr/bin/python3 /home/%u/.earth-view-wallpaper/get_wallpaper.py /home/%u/Pictures/earth-view.jpg
